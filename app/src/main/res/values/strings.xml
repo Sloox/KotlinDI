@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">KotlinDI</string>
+    <string name="server_action_ok">OK</string>
+    <string name="server_error_dialog_title">Server Error</string>
+    <string name="server_error_dialog_message">Communication with the Server has failed.</string>
 </resources>
