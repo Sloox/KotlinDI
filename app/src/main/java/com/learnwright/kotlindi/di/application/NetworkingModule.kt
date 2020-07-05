@@ -19,6 +19,6 @@ class NetworkingModule {
 
 
     companion object {
-        private const val STACKOVERFLOWAPI = "http://api.stackexchange.com/2.2/"
+        private const val STACKOVERFLOWAPI = "https://api.stackexchange.com/2.2/"
     }
 }

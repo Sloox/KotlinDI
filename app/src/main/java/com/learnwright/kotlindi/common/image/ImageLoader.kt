@@ -8,7 +8,7 @@ import com.bumptech.glide.request.RequestOptions
 class ImageLoader(private val mActivity: Activity) {
     private val mDefaultRequestOptions: RequestOptions = RequestOptions().centerCrop()
 
-    fun loadImage(uri: String?, target: ImageView?) {
+    fun loadImage(uri: String?, target: ImageView) {
         Glide.with(mActivity).load(uri).apply(mDefaultRequestOptions).into(target)
     }
 }

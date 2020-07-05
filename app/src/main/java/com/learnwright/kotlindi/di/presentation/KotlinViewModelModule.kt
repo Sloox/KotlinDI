@@ -13,7 +13,7 @@ import javax.inject.Provider
 import kotlin.reflect.KClass
 
 @Module
-class ViewModelModule {
+class KotlinViewModelModule {
     @MustBeDocumented
     @kotlin.annotation.Target(AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER)
     @kotlin.annotation.Retention(AnnotationRetention.RUNTIME)
@@ -21,7 +21,7 @@ class ViewModelModule {
     internal annotation class ViewModelKey(val value: KClass<out ViewModel>)
 
     @Provides
-    fun viewModelFactory(providerMap: Map<Class<out ViewModel>, @JvmSuppressWildcards Provider<ViewModel>>): ViewModelFactory {
+    fun viewModelFactory(providerMap: Map<Class<out ViewModel>, Provider<ViewModel>>): ViewModelFactory {
         return ViewModelFactory(providerMap)
     }
 

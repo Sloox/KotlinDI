@@ -7,7 +7,7 @@ import com.learnwright.kotlindi.di.application.ApplicationComponent
 import com.learnwright.kotlindi.di.presentation.PresentationComponent
 import com.learnwright.kotlindi.di.presentation.PresentationModule
 
-class BaseActivity : AppCompatActivity() {
+open class BaseActivity : AppCompatActivity() {
     private var mIsInjectorUsed = false
 
     @UiThread
